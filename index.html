@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <title>Challenge - Marcos Rangel</title>
+</head>
+<body>
+    <header class="header"><img src="assets/icons/logo.svg" alt=""></header>
+    <main class="content">
+        <div class="input_area">
+            <textarea id="input_area_text" placeholder="Digite seu texto" required onfocus="hidePlaceholder()" onblur="showPlaceholder()"></textarea>
+            <div class="aviso"><img src="assets/icons/alert.svg"><p>Apenas Letras minúsculas e sem acento. </p></div>
+
+            <div class="buttons" id="testes">
+                <button class="button__script button__style b1" id="buttons" type="button" onclick="encriptar()">Criptografar</button>
+                <button class="button__script button__style b2" id="buttons" type="button" onclick="desencriptar()">Descriptografar</button>
+            </div>
+        </div>
+        <div id="text_show">
+            <div id="result">
+            <img id='ilustration' src="assets/img/ilustration.svg" alt="Menina com uma Lupa olhando um cristal">
+            <div id="paragrafos">
+            <p class="p1">Nenhuma mensagem encontrada</p>
+            <p class="p2">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            </div>
+            <div id="copy" class="copy__button" onclick="copyText()"><button class="copy__button__style">Copiar</button></div>
+        </div>
+    </main>
+    <footer class="footer"> Desenvolvido por Marcos Rangel 2024</footer>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
