@@ -37,7 +37,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 59rem;
-    width: 42.5rem;
+    width: auto;
     margin-left: 15rem;
 }
 
@@ -127,9 +127,19 @@ textarea{
 }
 
 #result{
-    display: flex;
+    display: none;
     flex-direction: column;
+    justify-content: space-between;
+    height: 59rem;
     gap: 2rem;
+
+}
+
+#result_cripto{
+    font-size: 24px;
+    font-style: normal;
+    color: #495057;
+
 }
 
 #paragrafos{
@@ -153,15 +163,8 @@ textarea{
 #copy{
     align-self: center;
     
-    display: none;
+    
 }
-#result{
-    font-size: 24px;
-    font-style: normal;
-    color: #495057;
-
-}
-
 
 #copy__button__style{
     height: 4.20rem;
@@ -171,6 +174,7 @@ textarea{
     background-color: white;
     color:#0A3871;
     border: 1px solid #0A3871;
+
 }
 #copy__button__style:hover{
     background-color: #E9ECF8;
@@ -185,58 +189,172 @@ textarea{
     align-items: end;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1400px){
+    body{
+        width: auto;
+    }
+    .header{
+    display: flex;
+    justify-content: left;
+    padding:2.5rem 0 0 2.5rem;
+    }
+    .content{
+        width: auto;
+        display: grid;
+    }
+    .input_area{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 1.5rem;
+        height: auto;
+        width: auto;
+    }
 
+    textarea{
+        margin-top: 7rem;
+        min-height: 34.25rem;
+        height: auto;
+    }
+
+    #ilustration{
+        display: none;
+    }
+
+    #paragrafos{
+        align-self: center;
+
+    }
+
+    #text_show{
+        margin-left: 2.5rem;
+    
+        padding: 2rem;
+        
+        width: auto;
+        border-radius: 2rem;
+        box-shadow: 0px 24px 32px -8px #00000014;
+    
+        height: auto;
+        margin: 1.5rem;
+        background-color: white;
+    }
+
+    #result{
+        height: auto;
+    }
+
+    #result_cripto{
+        align-self: flex-start; 
+    }
+
+    #copy{
+        align-self: flex-end;
+    }
+
+    #copy__button__style{
+        height: 4.15rem;
+        border-radius: 1.5rem;
+        width: 39rem;
+        background-color: white;
+        color:#0A3871;
+        border: 1px solid #0A3871;
+    }
+
+}
+
+@media (max-width: 450px){
+    body{
+        width: auto;
+    }
+    header{
+        width: auto;
+    }
+
+    footer{
+        width: auto;
+    }
     .content{
         display: grid;
         grid-column: auto;
         grid-row: auto;
     }
     .input_area{
-        margin-left: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1rem;
+        height: auto;
+        width: auto;
+        
     }
 
     textarea{
-        height: 34.25rem;
+        min-height: 17.5rem;
+        height: auto;
+        width: auto;
+    }
+
+    .buttons{
+        width: auto;
+        height: 9.875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        
+        
+    }
+
+    .button__style{
+        height: 4.1875rem;
+        width: 21.4375rem;
     }
 
     #ilustration{
         display: none;
     }
+
+    #paragrafos{
+        align-self: center;
+
+    }
+
     #text_show{
-        margin-left: 2.5rem;
+        width: auto;
+        height: auto;
+        margin: 1.5rem;
     
         padding: 2rem;
         
-        width: 43rem;
+        
         border-radius: 2rem;
         box-shadow: 0px 24px 32px -8px #00000014;
     
-        height: 8.3rem;
-    
-    
+        
         background-color: white;
     }
 
-    /* #result{
-    display: flex;
-    justify-content: space-between;
+    #result{
+        height: auto;
+        width: auto;
+    }
 
+    #result_cripto{
+        align-self: flex-start; 
+    }
 
-    box-sizing: border-box;
-    padding: 2rem;
+    #copy{
+        align-self: flex-end;
+    }
 
-    margin-left: 2.5rem;
-    
-    width: 43rem;
-    border-radius: 2rem;
-    box-shadow: 0px 24px 32px -8px #00000014;
-    
-    height: 21.4rem;
-    
-    
-    background-color: white;        
-    } */
-
+    #copy__button__style{
+        height: 4.8175rem;
+        border-radius: 1.5rem;
+        width: 17.4375rem;
+        background-color: white;
+        color:#0A3871;
+        border: 1px solid #0A3871;
+    }
 }
-

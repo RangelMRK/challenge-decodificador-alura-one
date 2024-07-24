@@ -13,20 +13,23 @@
             <textarea id="input_area_text" placeholder="Digite seu texto" required onfocus="hidePlaceholder()" onblur="showPlaceholder()"></textarea>
             <div class="aviso"><img src="assets/icons/alert.svg"><p>Apenas Letras minúsculas e sem acento. </p></div>
 
-            <div class="buttons" id="testes">
-                <button class="button__script button__style b1" id="buttons" type="button" onclick="encriptar()">Criptografar</button>
-                <button class="button__script button__style b2" id="buttons" type="button" onclick="desencriptar()">Descriptografar</button>
+            <div class="buttons" id="buttons">
+                <button class="button__script button__style b1" id="buttons__input" type="button" onclick="encriptar()">Criptografar</button>
+                <button class="button__script button__style b2" id="buttons__input" type="button" onclick="desencriptar()">Descriptografar</button>
             </div>
         </div>
         <div id="text_show">
-            <div id="result">
+            <div id = 'toogleabe'>
             <img id='ilustration' src="assets/img/ilustration.svg" alt="Menina com uma Lupa olhando um cristal">
-            <div id="paragrafos">
-            <p class="p1">Nenhuma mensagem encontrada</p>
-            <p class="p2">Digite um texto que você deseja criptografar ou descriptografar</p>
+            <div id="paragrafos"><p class="p1">Nenhuma mensagem encontrada</p>
+            <p class="p2">Digite um texto que você deseja criptografar ou descriptografar</p></div>
+        </div>
+        <div id="result">
+            <div id="result_cripto">
             </div>
-            </div>
-            <div id="copy" class="copy__button" onclick="copyText()"><button id="copy__button__style">Copiar</button></div>
+            <button onclick="copyText()" id="copy__button__style">Copiar
+            </button>
+        </div>
         </div>
     </main>
     <footer class="footer"> Desenvolvido por Marcos Rangel 2024</footer>
