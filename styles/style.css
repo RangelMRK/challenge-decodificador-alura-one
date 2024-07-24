@@ -163,7 +163,7 @@ textarea{
 }
 
 
-.copy__button__style{
+#copy__button__style{
     height: 4.20rem;
     border-radius: 1.5rem;
     width: 20.5rem;
@@ -172,8 +172,8 @@ textarea{
     color:#0A3871;
     border: 1px solid #0A3871;
 }
-.copy__button__style:hover{
-    background-color: #D8DFE8;
+#copy__button__style:hover{
+    background-color: #E9ECF8;
     cursor: pointer;
 }
 
@@ -205,7 +205,6 @@ textarea{
     }
     #text_show{
         margin-left: 2.5rem;
-
     
         padding: 2rem;
         
@@ -217,5 +216,27 @@ textarea{
     
     
         background-color: white;
+    }
+
+    /* #result{
+    display: flex;
+    justify-content: space-between;
+
+
+    box-sizing: border-box;
+    padding: 2rem;
+
+    margin-left: 2.5rem;
+    
+    width: 43rem;
+    border-radius: 2rem;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    
+    height: 21.4rem;
+    
+    
+    background-color: white;        
+    } */
+
 }
-}
+
