@@ -268,8 +268,11 @@ textarea{
     body{
         width: auto;
     }
-    header{
+    .header{
         width: auto;
+        display: flex;
+        justify-content: left;
+        padding:1.5rem 0 0 1rem;
     }
 
     footer{
@@ -342,15 +345,9 @@ textarea{
         width: auto;
     }
 
-    #result_cripto{
-        align-self: flex-start; 
-    }
-
-    #copy{
-        align-self: flex-end;
-    }
-
     #copy__button__style{
+        align-self: center;
+
         height: 4.8175rem;
         border-radius: 1.5rem;
         width: 17.4375rem;
