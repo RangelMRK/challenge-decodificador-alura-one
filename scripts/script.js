@@ -29,7 +29,7 @@ function lockButton() {
     let selectBotoes = botoes.querySelectorAll(".button__style")
     if(document.getElementById("input_area_text").value==="") {
         for(let i=0; i < selectBotoes.length; i++)
-        botoess[i].disabled = true}
+        selectBotoes[i].disabled = true}
         
 }
 
@@ -40,7 +40,7 @@ function unlockButton(){
     function unlock(){let botoes = document.getElementById("buttons");
         let selectBotoes = botoes.querySelectorAll(".button__style")
             for(let i=0; i < selectBotoes.length; i++)
-            botoess[i].disabled = false}
+            selectBotoes[i].disabled = false}
 }
 
 function cleanTextArea(){

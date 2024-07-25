@@ -241,6 +241,7 @@ textarea{
     }
 
     #result{
+        justify-content: center;
         height: auto;
     }
 
