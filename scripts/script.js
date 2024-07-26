@@ -1,3 +1,5 @@
+let divAviso = document.getElementById("aviso");
+
 function showCopy(){
         document.getElementById("result").style.display = 'flex';
 }
@@ -50,7 +52,19 @@ function cleanTextArea(){
 lockButton();
 unlockButton();
 
+function validate(){
+    var textInput = document.getElementById('input_area_text').value;
+    var validChar = /^[a-z\s\n]+$/;
+
+    if (validChar.test(textInput)){
+        document.getElementById('aviso').style.display = 'none'; return true;} else {
+    document.getElementById('aviso').style.display = 'flex'; return false;
+    }
+}
+
 function encriptar() {
+    if (!validate()) return;
+
     hideToogle();
     showCopy();
     var x = document.getElementById("input_area_text").value;
@@ -74,6 +88,8 @@ function encriptar() {
 
 
 function desencriptar() {
+    if (!validate()) return;
+
         hideToogle();
         showCopy();
     var x = document.getElementById("input_area_text").value;
@@ -90,7 +106,6 @@ function desencriptar() {
     document.getElementById("result_cripto").innerHTML = z;
     cleanTextArea();
 }
-
 
 function copyText(){
     let inlineTxt = document.getElementById("result_cripto");

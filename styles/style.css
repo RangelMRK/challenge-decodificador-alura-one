@@ -58,6 +58,10 @@ textarea{
     color: #0A3871;
 }
 
+#aviso{
+    display: none;
+}
+
 .aviso{
     display: flex;
     flex-direction: row;
