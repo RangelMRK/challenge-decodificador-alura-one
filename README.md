@@ -41,4 +41,6 @@ A aplicação oferece as seguintes funcionalidades:
 - ![Static Badge](https://img.shields.io/badge/%20-CSS-%23262729?style=plastic&logo=css3)
 - ![Static Badge](https://img.shields.io/badge/%20-JavaScript-%23262729?style=plastic&logo=javascript)
 
+## 🔮 Vercel Deploy
 
+https://challenge-decodificador-marcos-rangel.vercel.app/
